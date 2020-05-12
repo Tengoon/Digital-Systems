@@ -17,7 +17,7 @@ An important part of Data Encapsulation are Access Modifers. Access Modifers are
 [You can learn more about Access Modifers here](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
   
 # Using Get and Set
-The get method (getDate) returns the value of the varible date while the set method (setDate) takes the paramter (newName) and assigns it the date variable. The "this" keyword is used to refer to current object. 
+The get method (getDate) returns the value of the varible date while the set method (setDate) takes the paramter (newDate) and assigns it the date variable. The "this" keyword is used to refer to current object. 
 
 Date.Java
 ```Java
@@ -50,10 +50,10 @@ public class BadClass {
 ```
 #### BadClass Output
 ```
-MyClass.java:4: error: name has private access in Date
+MyClass.java:4: error: date has private access in Date
     myObj.date = "Tuesday";
          ^
-MyClass.java:5: error: name has private access in Person
+MyClass.java:5: error: date has private access in Person
     System.out.println(myObj.date);
                   ^
 2 errors
@@ -76,7 +76,7 @@ public class GoodClass {
 Monday
 ```
 
-Because we used .setDate, we were able to set the name of the date variable. 
+Because we used .setDate, we were able to set the value of the date variable. 
 
 # Benefits of Encapsulation
 
